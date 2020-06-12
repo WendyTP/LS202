@@ -1,0 +1,162 @@
+/* ----header + all table setting----- */
+html, body {
+  font-size: 28px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+article {
+  box-sizing: border-box;
+  width: 680px;
+  border: 2px solid black;
+  padding: 10px 15px 15px 15px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+header {
+  margin-bottom: 10px;
+  border-bottom: 15px solid black;
+}
+
+header p {
+  margin: 0;
+}
+
+h2 {
+  border-top: 30px solid black;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+  padding: 5px 0 0 0;
+  font-size: 1rem;
+}
+
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+dt {
+  display: inline;
+}
+
+dd {
+  display: inline;
+  margin-left: 0;
+}
+
+header dl {
+  display: inline-block;
+  width: 50%;
+}
+
+/* calories 230 */
+header dl:first-of-type dt {
+  font-weight: bold;
+}
+
+/* calories from fat 40 */
+header dl:last-of-type {
+  text-align: right;
+}
+
+/* all table cell border collapse */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* all tables th */
+tbody th {
+  text-align: left;
+  padding: 2px 0;
+  border-top: 1px solid black;
+}
+
+/* all tables td */
+tbody td {
+  padding: 2px 0;
+  border-top: 1px solid black;
+}
+
+/* all tables last td: % */
+tr td:last-of-type {
+  text-align: right;
+}
+
+/*-------- 1st table -----*/
+/* daily value */
+table:first-of-type thead th {
+  text-align: right;
+}
+
+/* first table dd */
+tbody dd {
+  font-weight: normal;
+}
+
+/* first tbody % */
+table:first-of-type tbody:first-of-type td {
+  font-weight: bold;
+}
+
+/* detail type trans: fat and sugars */
+.detail-type dl:last-of-type {
+  text-align: left;
+}
+
+/* detail type indent */
+.detail-type td:first-of-type {
+  text-indent: 0.7rem;
+}
+
+/* detail type saturated fat normal font */
+.detail-type dt {
+  font-weight: normal;
+}
+
+/* 2nd tbody vitamin A top border */
+tbody + tbody tr:first-of-type td {
+  border-top: 30px solid black;
+}
+
+/* ---- 2nd table ------*/
+/* 2nd table td */
+table + table td {
+  border-top: none;
+}
+
+/* 2nd table thead */
+table + table thead th {
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+}
+
+/* 2nd table last td */
+table + table td:last-of-type {
+  text-align: left;
+}
+
+/* 2nd table font and width*/
+table + table {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+/* ------- footer ------*/
+/* footer */
+tfoot p {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0.7rem;
+  text-indent: -0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  border-top: 1px solid black;
+}
+
+
