@@ -9,21 +9,25 @@
   <body>
     <form action="#" method="post">
       <fieldset>
-        <dl>
+        <dl class="partial one-half left">
           <dt>
             <label for="first_name">First Name</label>
           </dt>
           <dd>
             <input type="text" id="first_name" name="first_name" required/>
           </dd>
+        </dl><!--
        
+        --><dl class="partial one-half right">
           <dt>
             <label for="last_name">Last Name</label>
           </dt>
           <dd>
             <input type="text" id="last_name" name="last_name" required/>
           </dd>
-        
+        </dl>
+
+        <dl>
           <dt>
             <label for="email">Email Address</label>
           </dt>
@@ -32,14 +36,18 @@
                    placeholder="username@domain" required
                    autocapitalize="off" autocomplete="off" autocorrect="off" />
           </dd>
-       
+        </dl>
+
+        <dl class="partial one-half left">
           <dt>
             <label for="city">City</label>
           </dt>
           <dd>
             <input type="text" id="city" name="city" required/>
           </dd>
+        </dl><!--
 
+        --><dl class="partial two-tenths middle">
           <dt>
             <label for="state">State</label>
           </dt>
@@ -52,7 +60,9 @@
               <option>NY</option>
             </select>
           </dd>
-  
+        </dl><!--
+        
+        --><dl class="partial one-third right">
           <dt>
             <label for="postcode">Postcode</label>
           </dt>
