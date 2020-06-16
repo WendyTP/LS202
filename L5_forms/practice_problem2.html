@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice problem 2</title>
+    <meta charset="utf-8" />
+
+    <style>
+      .movie-rating label,
+      .movie-rating select {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <label for="search">Search for</label>
+        <input type="text" id="search" name="search" />
+        
+        <label>
+          <input type="radio" name="media" value="tv" checked/>
+          TV
+        </label>
+        <label>
+          <input type="radio" name="media" value="movies"/>
+          Movies
+        </label>
+        <label>
+          <input type="radio" name="media" value="music" />
+          Music
+        </label>
+        <button>Search</button>
+      </fieldset>
+    </form>
+
+    <form action="#" method="post" class="movie-rating">
+      <fieldset>
+        <label for="movie">Movie</label>
+        <select id="movie" name="movie" size=4>
+          <option value="looper">Lopper</option>
+          <option value="frozen">Frozen</option>
+          <option value="tommy_boy">Tommy Boy</option>
+          <option value="alien" selected>Alien</option>
+        </select>
+
+        <label for="rating">Rating</label>
+        <input type="number" id="rating" name="rating" 
+               min="1" max="5" />
+
+        <label for="favourite">
+          <input type="checkbox" id="favourite" name="favourite"/>
+          Add to my favourites
+        </label>
+        <input type="submit" value="Rate movie" />
+      </fieldset>
+    </form>
+
+    <form action="#" method="get">
+      <fieldset>
+        
+        <dl>
+          <dt>
+            <label for="categories">
+              <h1>Category</h1>
+            </label>
+          </dt>
+          <dd>
+            <select id="categories" name="categories" multiple size="2">
+              <option value="core">Core</option>
+              <option value="plugin">Plugs and Libraries</option>
+              <option value="convention">Conventions</option>
+            </select>
+          </dd>
+        </dl>
+        
+        <dl>
+          <dt>
+            <label for="tags">
+              <h1>Tags</h1>
+            </label>
+          </dt>
+          <dd>
+            <select id="tags" name="tags" multiple size="2">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="ruby">RUBY</option>
+            </select>
+          </dd>
+        </dl>
+          
+        <input type="reset" value="Reset" />
+        <input type="submit" value="filter" />
+
+      </fieldset>
+   
+
+    </form>
+  </body>
+</html>

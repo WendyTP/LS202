@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="first_name">First Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="first_name" name="first_name" required/>
+          </dd>
+       
+          <dt>
+            <label for="last_name">Last Name</label>
+          </dt>
+          <dd>
+            <input type="text" id="last_name" name="last_name" required/>
+          </dd>
+        
+          <dt>
+            <label for="email">Email Address</label>
+          </dt>
+          <dd>
+            <input type="email" id="email" name="email"
+                   placeholder="username@domain" required
+                   autocapitalize="off" autocomplete="off" autocorrect="off" />
+          </dd>
+       
+          <dt>
+            <label for="city">City</label>
+          </dt>
+          <dd>
+            <input type="text" id="city" name="city" required/>
+          </dd>
+
+          <dt>
+            <label for="state">State</label>
+          </dt>
+          <dd>
+            <select id="state" name="state">
+              <option value="" selected disabled>Choose One</option>
+              <option >AK</option>
+              <option>AL</option>
+              <option>CA</option>
+              <option>NY</option>
+            </select>
+          </dd>
+  
+          <dt>
+            <label for="postcode">Postcode</label>
+          </dt>
+          <dd>
+            <input type="text" id="postcode" name="postcode" maxlength="5" required />
+          </dd>
+        </dl>
+
+        <p>Which of these colors do you like best?</p>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="colors" value="red" checked/>
+              Red
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colors" value="orange" />
+              Orange
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colors" value="purple" />
+              Purple
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="colors" value="blue" />
+              Blue
+            </label>
+          </li>
+        </ul>
+
+        <p>Which web technologies do you want to learn?</p>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox"  name="html" value="html"/>
+              HTML
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"  name="css" value="css" />
+              CSS
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"  name="javascript" value="javascript"/>
+              JavaScript
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="ruby" value="ruby" />
+              Ruby
+            </label>
+          </li>
+        </ul>
+
+        <dl>
+          <dt>
+            <label for="comment">Comment</label>
+          </dt>
+          <dd>
+            <textarea id="comment" name="comment" rows="6" cols="80"
+                       placeholder="Please leave a comment." ></textarea>
+          </dd>
+        </dl>
+          
+        <input type="hidden" name="timestamp" value="2020-06-16" />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

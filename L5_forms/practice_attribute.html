@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Practice input attribute</title>
+    <meta charset="utf-8" />
+
+    <style>
+      fieldset:nth-of-type(4) input:required {
+        background-color:yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <label>
+          Phone
+          <input type="tel" name="phone" value="123-4325-3342" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <input type="radio" name="color" value="red" />
+          Red
+        </label>
+        <label>
+        <input type="radio" name="color" value="blue" />
+        Blue
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" value="Save" disabled />
+      </fieldset>
+
+      <fieldset>
+        <label>
+          First Name
+        <input type="text" name="first_name" size="10" maxlength="16" required />
+        </label>
+        <input type="submit" value="save" />
+      </fieldset>
+    </form>
+  </body>
+</html>

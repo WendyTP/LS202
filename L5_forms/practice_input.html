@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> practice input</title>
+    <meta charset="utf-8" />
+
+    <style>
+      input[type="checkbox"]:checked {
+        box-shadow: 0 0 0 3px orange;
+      }
+      input:checked + label {
+  color: red;
+}
+   
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="first name">First Name</label>
+        <input type="text" id="first name" name="first_name" maxlength="5" value="ex. Tom" />
+        <label>
+          Password
+          <input type="password" required minlength="2"  maxlength="10" size="5"/>
+        </label>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="username@domain"/>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone"/>
+        <input type="submit" value="Save"/>
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" name="my-checkbox" id="opt-in">
+          <label for="opt-in">Check me!</label>
+
+        <label>
+          <input type="checkbox" name="choice" value="search" />
+          Sort search results
+        </label>
+
+        <label>
+          <input type="checkbox" name="choice" value="google" checked />
+          Search on Google
+        </label>
+
+        <label for="recent results">
+        <input type="checkbox" id="recent results" name="choice" value="recent" />
+        Recent results (within last year)
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <input type="radio" name="color" value="red" required />
+        <label>
+          Red
+        </label>
+        <input type="radio" name="color" value="blue" required />
+        <label>
+          Blue
+        </label>
+        <label>
+          <input type="radio" name="green"  required />
+          Green
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="reset" value="Clear Form"
+      </fieldset>
+
+        
+    </form>
+  </body>
+</html>

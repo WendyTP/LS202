@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>practice form</title>
+    <meta charset="utf-8" />
+    
+    <style>
+      fieldset {
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <h1>Log In</h1>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" />
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Log in" />
+        <input type="submit" value="Delete account" formaction="/account/delete" />
+        <input type="submit" value="Forgot password" formaction="/account/password" />
+        <input type="submit" value="Reset" />
+      </fieldset>
+
+    </form>
+  </body>
+</html>
