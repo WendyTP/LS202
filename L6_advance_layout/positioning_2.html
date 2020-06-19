@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> position relative</title>
+    <meta charset="utf-8" />
+    <style>
+      section {
+        border: 1px solid gray;
+        padding: 10px;
+      }
+
+      aside {
+        border: 1px solid gray;
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100px;
+      }
+
+      .normal {
+        background-color: yellow;
+      }
+
+      .shifted {
+        position: relative;
+      }
+
+      section:first-of-type .pos {
+        background-color: cyan;
+        right: 60px;
+      }
+
+      section:first-of-type .neg {
+        background-color: lightgreen;
+        right: -60px;
+      }
+
+    
+
+    
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <aside class="normal">normal</aside>
+      <aside class="shifted pos">right</aside>
+      <aside class="shifted neg">-left</aside>
+      <aside class="normal">normal</aside>
+    </section>
+
+   
+  </body>
+</html>

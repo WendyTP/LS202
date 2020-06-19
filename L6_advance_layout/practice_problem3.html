@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Position and fix element</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        height: 100%;
+      }
+      #first-element {
+        padding: 30px 15px;
+        box-sizing: border-box;
+        left: 50%;
+        margin-left: -200px;
+        top: 30px;
+        position: fixed;
+        width: 400px;
+        background-color: lightyellow;
+        text-align: center;
+        z-index: 2 ;
+        
+      }
+
+      section {
+        border : 5px solid lightblue;
+        box-sizing: border-box;
+      }
+
+      #new-element {
+        background-color:rgba(0, 0, 0, .6) ;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: fixed;
+        z-index: 1;
+      }
+
+      #nested-element {
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis. Non
+        consequat sunt non nostrud sint id quis consectetur aute. Exercitation nisi
+        tempor excepteur. Magna exercitation ad amet ut commodo consequat non. Duis
+        veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum reprehenderit
+        et irure veniam ex. Duis cupidatat ullamco adipisicing mollit ea nulla irure
+        mollit eu. Aliqua laboris aute sint consectetur aute occaecat cillum sint
+        aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+    </section>
+
+      <div id="first-element">
+        I'm positioned!
+        <div id="nested-element"></div>
+      </div>
+      <div id="new-element">new element</div>
+  </body>
+</html>

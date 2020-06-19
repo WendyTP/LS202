@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blanchedalmond;
+  font: normal 16px Helvetica, Arial, San-serif;
+  color: rgb(27, 22, 22);
+  margin: 8px auto;
+
+}
+
+.cf::after {
+  content: "";
+  display: block;
+}
+.cf::after {
+  clear: both;
+}
+
+.container {
+  border: 2px solid gray;
+  padding: 20px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section h1, 
+section h2,
+section h3 {
+  color: rgb(138, 56, 72);
+  margin: 20px 0;
+}
+
+section p {
+  margin-bottom: 20px;
+  line-height: 35px;
+ 
+}
+
+section a {
+  color: rgb(34, 32, 32);
+  text-decoration: none;
+}
+
+section .border {
+  border: 2px dashed black;
+  margin: 40px;
+  width: 500px;
+  padding: 30px;
+}
+
+section .inline-margin a {
+  margin: 30px;
+}
+
+section .inline-padding a {
+  background-color: olive;
+  color: white;
+  padding : 30px;
+}
+
+section .inline-float a {
+  background-color: olive;
+  border: 2px solid darkgreen;
+  color: white;
+  margin: 10px;
+  padding: 30px;
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+
+/* box elements */
+.block .wrapper {
+  margin-bottom: 30px;
+}
+
+.block .box-1 {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.block .box-2 {
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  background-color: green;
+}
+
+.block .box-3 {
+  width: 90px;
+  color: white;
+  background-color: tomato;
+}
+
+.block .box-4 {
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+  background-color: pink;
+  color: white;
+}
+
+/* float block elements */
+.block .fl-1 {
+  float: left;
+  background-color:dodgerblue;
+  color: white;
+  border: 1px solid red;
+}
+
+.block .fl-2 {
+  float: right;
+  background-color:tomato;
+  color: white;
+}
+
+.block .fl-3 {
+  float: left;
+  background-color:tomato;
+  color: white;
+  width: 40%;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.block .fl-4 {
+  float: right;
+  background-color: dodgerblue;
+  color: white;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.block .bl-a  {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  margin: 10px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* inline block */
+
+  .inline-block::after {
+    border-bottom: 2px dashed black;
+    content: "";
+    padding-top: 30px;
+    width: 100%;
+    display: block;
+    
+  }
+  .inline-block .nav {
+    text-align: center;
+  }
+
+.inline-block .nav a {
+  display: inline-block;
+  background-color: dodgerblue;
+  color: white;
+  padding: 20px 30px;
+  margin: 20px 8px 25px;
+  width: 180px;
+  text-align: center;
+}
+
+/* float and positioning element - float */
+.flo-pos h1 {
+  text-align: center;
+  margin: 30px 0 25px;
+}
+
+.flo-pos .flbx-1 {
+  background-color: tomato;
+  color: white;
+  width: 50%;
+  float: left;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.flo-pos .flbx-2 {
+  background-color: dodgerblue;
+  color: white;
+  width: 50%;
+  float: left;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+}
+
+
+.flo-pos .flbx-3 {
+  background-color:seagreen;
+  color: white;
+  width: 100%;
+  height: 50px;
+  clear: both;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+} 
+
+/* float positioning elements - position */
+
+.pos ul {
+  padding: 0 0 20px 30px;
+  margin-left: 40px;
+}
+
+.pos ul li {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.pos-fixed .fixed {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+}
+
+.pos-relative .rel-box {
+  background-color: tomato;
+  color: white;
+  border-radius: 4px;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  right: 50px;
+}
+
+.pos-abos {
+  position: relative;
+}
+
+.pos-abos .abs-box {
+  position: absolute;
+  background-color: seagreen;
+  color: white;
+  top: -30px;
+  left: 250px;
+  width: 150px;
+  padding: 25px 25px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+
