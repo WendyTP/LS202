@@ -1,0 +1,39 @@
+html {
+  font-size: 16px;
+}
+
+body, article, p {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+main {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+  background-color: teal;
+}
+
+.content,
+.sidebar {
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.content {
+  background-color: pink;
+  width: 80%;
+  float: left;
+}
+
+.sidebar {
+  background-color: cyan;
+  overflow: hidden;
+  
+}
